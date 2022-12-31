@@ -3,6 +3,7 @@ import Image from 'next/image'
 import { ContainerStyle, ImageStyle, TextStyle } from './styles'
 
 export interface IconGameProps {
+  id?: string
   iconUrl: string
   alt: string
   width: number
@@ -11,6 +12,7 @@ export interface IconGameProps {
 }
 
 export const IconGame = ({
+  id,
   iconUrl,
   alt,
   width,
@@ -18,7 +20,10 @@ export const IconGame = ({
   name,
 }: IconGameProps) => {
   return (
-    <figure className={`${ContainerStyle} ${name && 'cursor-pointer'}`}>
+    <figure
+      className={`${ContainerStyle} ${name && 'cursor-pointer'}`}
+      key={id}
+    >
       <Image
         src={iconUrl}
         alt={alt}
