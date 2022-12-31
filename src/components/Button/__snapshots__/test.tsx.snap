@@ -3,7 +3,7 @@
 exports[`<Button /> should match snapshot 1`] = `
 <div>
   <button
-    class="flex items-center justify-center rounded-[3px] text-sans text-white text-base font-semibold transition transition-color duration-300 gap-[0.4rem] py-3.5 px-8 bg-primary hover:bg-blue-600 "
+    class="flex items-center justify-center rounded-[3px] text-sans text-white text-base font-semibold transition transition-color duration-300  gap-[0.4rem] py-3.5 px-8 bg-primary hover:bg-blue-600 "
   >
     Children
   </button>

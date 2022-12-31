@@ -32,6 +32,13 @@ Secondary.args = {
   variant: 'secondary',
 }
 
+export const tertiary = Template.bind({})
+tertiary.args = {
+  children: 'Button',
+  size: 'small',
+  variant: 'tertiary',
+}
+
 export const FixedSmallSize = Template.bind({})
 FixedSmallSize.args = {
   children: 'Small Size',

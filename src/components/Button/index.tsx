@@ -10,7 +10,7 @@ export interface ButtonProps extends BaseButtonProps {
   children: React.ReactNode
   className?: string
   size?: 'small' | 'flexible' | 'full'
-  variant?: 'primary' | 'secondary'
+  variant?: 'primary' | 'secondary' | 'tertiary'
 }
 
 export const Button = ({

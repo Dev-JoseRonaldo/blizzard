@@ -35,13 +35,17 @@ describe('<Button />', () => {
   })
 
   it('should render with correct variants', () => {
-    render(<Button variant="secondary">Children</Button>)
+    const { rerender } = render(<Button variant="secondary">Children</Button>)
 
     const component = getByRole('button', { name: 'Children' })
 
     expect(component).toHaveClass(
       'hover:text-black-800 hover:bg-white border-white border-2',
     )
+
+    rerender(<Button variant="tertiary">Children</Button>)
+
+    expect(component).toHaveClass('gap-2.5 py-0 px-0 hover:text-primaryLight')
   })
 
   it('should match snapshot', () => {
