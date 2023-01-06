@@ -27,6 +27,10 @@ module.exports = {
           800: '#020203',
         },
       },
+      backgroundImage: {
+        'gradient-dropdown':
+          'linear-gradient(180deg, #020203 0%, rgba(14, 17, 23, 0.92) 96.35%, rgba(14, 17, 23, 0.9) 100%)',
+      },
     },
   },
   plugins: [],
