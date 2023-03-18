@@ -47,7 +47,7 @@ export const Dropdown = ({ items, type, name, FooterItems }: DropdownProps) => {
             as={Fragment}
             enter="transition-all ease duration-500"
             enterFrom=" max-h-0 h-0 opacity-95 pt-0 pb-0"
-            enterTo="max-h-[900px] h-max opacity-1 pt-28 pb-36"
+            enterTo="max-h-[900px] h-max opacity-1 pt-20 pb-36"
             leave="transition-all ease duration-150"
             leaveFrom="opacity-60"
             leaveTo="opacity-0"
